@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name | Personal Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #f5f5f0;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 6rem 2rem 2rem;
+      background-color: #f0eee8;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      font-style: italic;
+      color: #666;
+    }
+
+    section.gallery {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .grid img {
+      width: 100%;
+      height: auto;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .grid img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1rem;
+      font-size: 0.9rem;
+      color: #aaa;
+      border-top: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Your Name</h1>
+    <p>a curated life in still frames.</p>
+  </header>
+
+  <section class="gallery">
+    <div class="grid">
+      <img src="https://source.unsplash.com/random/400x500/?fashion,editorial" alt="Gallery image">
+      <img src="https://source.unsplash.com/random/400x500/?vintage,oldmoney" alt="Gallery image">
+      <img src="https://source.unsplash.com/random/400x500/?paris,luxury" alt="Gallery image">
+      <img src="https://source.unsplash.com/random/400x500/?classical,elegance" alt="Gallery image">
+      <img src="https://source.unsplash.com/random/400x500/?art,minimalist" alt="Gallery image">
+      <img src="https://source.unsplash.com/random/400x500/?woman,portrait" alt="Gallery image">
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Your Name. All quiet luxury, all rights reserved.</p>
+  </footer>
+
+</body>
+</html>
